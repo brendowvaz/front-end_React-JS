@@ -1,0 +1,53 @@
+.sales {
+    display: flex;
+    align-items: center;
+
+    width: 80%;
+    max-width: 1120px;
+
+    margin: 80px auto;
+}
+
+.sales__title {
+    font-size: 36px;
+    font-weight: 300;
+
+    margin-left: 22px;
+}
+
+.sales__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+    width: 80%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1260px) {
+    
+    .sales__cards {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .sales__title {
+        margin-left: 15px;
+
+        font-size: 18px;
+    }
+
+    .sales__icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .sales__cards {
+        grid-template-columns: 1fr;
+    }
+}
